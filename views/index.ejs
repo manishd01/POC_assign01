@@ -1,0 +1,73 @@
+
+<link rel="stylesheet" type="text/css" href="./styles.css">
+
+
+<body backgroundcolor="white">
+
+<h1 id="greeting">Hi <%= name %></h1>
+    <div class="plan-container">
+        <div class="plan-header">
+            <h2>Choose Your Subscription Plan</h2>
+        </div>
+        <div class="type-of">
+        <div class="plan-slider">
+            <div id="yearOption" onclick="toggleOption('year',this)">Yearly</div>
+            <div id="monthOption" onclick="toggleOption('month',this)">Monthly</div>
+           
+        </div>
+        <div class="plan-options"> 
+            <div class="plan-option" onclick="select_opt(this)" data-plan="mobile">Mobile</div> 
+            <div class="plan-option" onclick="select_opt(this)" data-plan="basic">Basic</div>
+            <div class="plan-option" onclick="select_opt(this)" data-plan="standard">Standard</div>
+            <div class="plan-option" onclick="select_opt(this)" data-plan="premium">Premium</div>
+        </div>
+        </div>
+        <div class="plan-details">
+            <table class="plan_table">
+                
+                <tr id="prices_plan">
+                    <td>Price (INR)</td>
+
+                    <td class="ele-tables">100</td>
+                    <td class="ele-tables">200</td>
+                    <td class="ele-tables">500</td>
+                    <td class="ele-tables">700</td>
+                    <script>
+                        addprices();                        
+                    </script>
+                </tr>
+                <tr class="rows-down">
+                    <td>Video Quality</td>
+                    <td class="ele-tables" id="mobilePlanQuality">Good</td>
+                    <td class="ele-tables" id="basicPlanQuality">Good</td>
+                    <td class="ele-tables" id="standardPlanQuality">Better</td>
+                    <td class="ele-tables" id="premiumPlanQuality">Best</td>
+                </tr>
+                <tr class="rows-down">
+                    <td>Resolution</td>
+                    <td class="ele-tables" id="mobilePlanResolution">480p</td>
+                    <td class="ele-tables" id="basicPlanResolution">480p</td>
+                    <td class="ele-tables" id="standardPlanResolution">1080p</td>
+                    <td class="ele-tables" id="premiumPlanResolution">4K+HDR</td>
+                </tr>
+                <tr class="rows-down">
+                    <td>Devices Supported</td>
+                    <td class="ele-tables" id="mobilePlanDevices">Phone, <br>Tablet</td>
+                    <td class="ele-tables" id="basicPlanDevices">Phone, <br> Tablet,  <br>TV,  <br>Computer</td>
+                    <td class="ele-tables" id="standardPlanDevices">Phone,  <br>Tablet, <br> TV,  <br>Computer</td>
+                    <td class="ele-tables" id="premiumPlanDevices">Phone,  <br>Tablet,  <br>TV,  <br>Computer</td>
+                </tr>
+            </table>
+        </div>
+        <button id="checkoutbtn" type="submit" >CheckOut</button>
+    </div>
+
+
+
+<div id="logoutt">
+<form action="/logout" method="POST">
+  <button  class ="logoutbtn" type="submit" >Log Out</button>
+</form>
+</div> 
+</body>
+<script src="./script.js"></script>

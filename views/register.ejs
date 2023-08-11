@@ -1,0 +1,30 @@
+<!-- registering:....
+ -->
+
+ <link rel="stylesheet" type="text/css" href="./styles.css">
+ <body>
+    <div class="register-box">
+        <h1 class="headtext">Create New Account</h1>
+
+        <form action="/register" method="POST" class="register-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="login-link">
+            <label> Already have an Account?  </label>
+            <a class="clicklink" href="/login">Log In</a>
+        </div>
+    </div>
+</body>

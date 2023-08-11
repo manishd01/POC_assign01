@@ -1,0 +1,279 @@
+body {
+    background-color: steelblue;
+}
+#greeting{
+    position: absolute;
+    top: 0%;
+    margin-top: 4px;
+    color: rgb(46, 25, 25);
+    font-family: monospace;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.headtext{
+    font-size: 18px;
+    text-align: center;
+}
+
+.login-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-form button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+.clicklink{
+    text-decoration: none;
+    font-weight:bolder;
+}
+
+.register-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+/* //---------------------------- */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.register-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form label {
+    margin-bottom: 5px;
+}
+
+.register-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.register-form button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.login-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+/* ///------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.type-of{
+    display: flex;
+}
+.plan-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.plan-header {
+    text-align: center;
+}
+.button-slide{
+    border-radius: 24px;
+
+}
+
+
+
+
+.plan-slider {
+    /* width: 180px; */
+    display: flex;
+    margin-top: 40px;
+    border:  1px black solid;
+    background-color: #041e72;
+    color:white;
+    border-radius: 30px;    
+    padding: 12px; 
+    font-size: small;
+    height: 35px;
+}
+.selectedMon{
+    background-color: white;
+    color:#041e72;
+    font-size: large;
+    border-radius: 17px;
+    padding: 5px;
+}
+#monthOption{
+    margin-left: 10px;
+}
+
+.plan-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.plan-options {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 0;
+}
+
+.plan-option {
+    border: 2px solid #073e79;
+    height: 60px;
+    width: 130px;
+    text-align: center;
+    color: #dddddd;
+    background-color:#073e79 ;
+    opacity: 0.5;
+   padding-top: 36px;
+   margin:20px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.selected_plann{
+    background-color: #073e79;
+    opacity: 1;
+    color: white;
+    font-size: larger;
+
+}
+
+.plan-details {
+    text-align: center;
+}
+
+.plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px red solid;
+}
+
+
+.rows-down{
+    border-bottom: 80px black solid;
+}
+
+.ele-tables{
+    color:gray;
+    height: 60px;
+    width:160px;
+    text-align: center;
+}
+#checkoutbtn {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#checkoutbtn:hover {
+    background-color: #0056b3;
+    font-size: larger;
+}
+
+#logoutt{
+    position: absolute;
+    right: 2px;
+    top: 1px;
+    
+}
+.logoutbtn{
+    background-color: #ccc;
+    color: rgb(3, 3, 53);
+    font-size: large;
+}

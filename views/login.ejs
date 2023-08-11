@@ -1,0 +1,28 @@
+<!-- login ing
+ -->
+ <link rel="stylesheet" type="text/css" href="./styles.css">
+ <body>
+    <div class="login-box">
+        <h1 class="headtext">Login to your Account</h1>
+        <h6><% if (messages.error) { %>
+            <%= messages.error %>
+        <% } %></h6>
+
+        <form action="/login" method="POST" class="login-form">
+            <div>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+
+        <div class="register-link">
+            <label>New to POC app?</label>
+            <a class="clicklink" href="/register">Register Here</a>
+        </div>
+    </div>
+</body>
